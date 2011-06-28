@@ -1,0 +1,15 @@
+<h1>Have fun</h1>
+
+<%= form_for(:map, :url => "/map/search") do |f| %>
+  <div class="field">
+    <%= f.label :start_address, "Start Address" %><br />
+    <%= f.text_field :start_address %>
+  </div>
+  <div class="field">
+    <%= f.label :end_address, "End Address" %><br />
+    <%= f.text_field :end_address %>
+  </div>
+  <div class="action">
+    <%= f.submit "Show me the way!" %>
+  </div>
+<% end %>
