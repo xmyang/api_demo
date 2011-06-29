@@ -9,7 +9,6 @@ describe "Google Map Directions API" do
     params = {:origin => "钟楼，西安", :destination => "鼓楼，西安", :sensor => "false"}
     @json_result = http_get(domain, path, params)
     @result = ActiveSupport::JSON.decode(@json_result)
-    puts @result.inspect
   end
 
   it "should have distance" do
