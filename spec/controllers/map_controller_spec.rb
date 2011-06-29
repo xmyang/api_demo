@@ -15,6 +15,16 @@ describe MapController do
 
   it "should have a start address field" do
     get :search
-    response.should have_selector("input[start_address='map[start_address]'][type='text']")
+    response.should have_selector("input[name='map[start_address]'][type='text']")
+  end
+  
+  it "should have an end address field" do
+    get :search
+    response.should have_selector("input[name='map[end_address]'][type='text']")
+  end
+  
+  it "should have a submit button" do
+    get :search
+    response.should have_selector("input[name='commit'][type='submit']")
   end
 end

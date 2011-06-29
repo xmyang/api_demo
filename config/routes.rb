@@ -1,5 +1,6 @@
 ApiDemo::Application.routes.draw do
   root :to => "map#search"
+  # match 'map/search' => 'map#search'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
