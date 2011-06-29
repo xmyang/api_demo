@@ -9,7 +9,11 @@ gem 'sqlite3'
 
 group :development, :test do
   gem 'rspec-rails'
+  gem "cucumber-rails", ">= 0.3.2"
   gem 'webrat'
+  gem "database_cleaner", ">= 0.5.2"
+  gem "selenium-client", ">= 1.2.18"
+  gem "launchy"
 end
 
 # Use unicorn as the web server
